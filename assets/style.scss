@@ -14,3 +14,33 @@ html, body {
   width: 100%;
   height: 100%;
   font-size: 18px; 
+}
+
+.webview {
+  width: 100%;
+  margin: auto;
+
+  .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: config.$color-green;
+    color: config.$color-white;
+
+    .container {
+      h1 {
+        font-size: 2rem;
+        text-align: center;
+
+      }
+      p {
+        font-size: 1rem;
+        text-align: center;
+      }
+    }
+
+  }
+
+}
