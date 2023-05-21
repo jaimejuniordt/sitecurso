@@ -48,7 +48,7 @@ html, body {
         width: 100%;
         margin-top: 8px;
 
-        .btn-portfolio {
+        .btn-curso {
           @include config.font-paragraf;
           width: 160px;
           height: 35px;
@@ -58,8 +58,6 @@ html, body {
           color: config.$color-white;
         }
       }
-    }
-
-  }
-
+    }   
+  } 
 }
