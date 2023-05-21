@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+}
+
+.webview {
+  width: 100%;
+  margin: auto;
+}
+.webview .intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #29AE81;
+  color: white;
+}
+.webview .intro .container h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+.webview .intro .container p {
+  font-size: 1rem;
+  text-align: center;
+}
+.webview .intro .container .m-auto-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 8px;
+}
+.webview .intro .container .m-auto-btn .btn-curso {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  width: 160px;
+  height: 35px;
+  border-radius: 6px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+.webview .aulas {
+  width: 100%;
+}
+.webview .aulas .container {
+  padding: 10px;
+}
+.webview .aulas .container .title {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.webview .aulas .container .title h2 {
+  font-family: "Ruda", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #29AE81;
+}
+.webview .aulas .container .row {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.webview .aulas .container .row .c-photo {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.webview .aulas .container .row .c-photo img {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.webview .aulas .container .row .c-descricao {
+  width: 100%;
+}
+.webview .aulas .container .row .c-descricao p {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.webview .aulas .container .row .c-descricao .habilidades {
+  width: 100%;
+}
+.webview .aulas .container .row .c-descricao .habilidades .h-item {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.webview .aulas .container .row .c-descricao .habilidades .h-item .h-title {
+  width: 100%;
+}
+.webview .aulas .container .row .c-descricao .habilidades .h-item .h-title h3 {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.webview .aulas .container .row .c-descricao .habilidades .h-item .h-porcentagem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  min-height: 25px;
+}
+.webview .aulas .container .row .c-descricao .habilidades .h-item .h-porcentagem .h-porcentagem-geral {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 6px;
+  border-radius: 6px;
+}
+.webview .aulas .container .row .c-descricao .habilidades .h-item .h-porcentagem .h-porcentagem-geral .h-porcentagem-conhecimento {
+  height: 100%;
+}
+.webview .aulas .container .row .c-descricao .habilidades .h-item .h-porcentagem .h-porcentagem-geral span {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  margin-left: 100px;
+}
+
+.webview .gramatica {
+  width: 100%;
+  background-color: #29AE81;
+  color: white;
+}
+.webview .gramatica .container {
+  padding: 10px;
+}
+.webview .gramatica .container .s-title {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px h2;
+  margin-bottom-font-family: "Ruda", sans-serif;
+  margin-bottom-font-weight: 400;
+  margin-bottom-font-size: 1, 6rem;
+  margin-bottom-font-weight: bold;
+  margin-bottom-color: white;
+}
+.webview .gramatica .container .s-carrousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.webview .gramatica .container .s-carrousel .s-carrousel-container {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+}
+.webview .gramatica .container .s-carrousel .s-carrousel-container .s-carrousel-item {
+  min-height: 260px;
+  background-color: white;
+  color: #29AE81;
+}
+.webview .gramatica .container .s-carrousel .s-carrousel-container .s-carrousel-item .title {
+  width: 100%;
+  padding: 10px;
+}
+.webview .gramatica .container .s-carrousel .s-carrousel-container .s-carrousel-item .title p {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.webview .gramatica .container .s-carrousel .s-carrousel-container .s-carrousel-item .body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 180px;
+}
+.webview .gramatica .container .s-carrousel .s-carrousel-container .s-carrousel-item .body .icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.webview .gramatica .container .s-carrousel .s-carrousel-container .s-carrousel-item .body .icon span i {
+  font-size: 38px;
+}
+.webview .gramatica .container .s-carrousel .s-carrousel-container .s-carrousel-item .body .texto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 10px;
+}
+.webview .gramatica .container .s-carrousel .s-carrousel-container .s-carrousel-item .body .texto p {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.4rem;
+}/*# sourceMappingURL=style.css.map */
