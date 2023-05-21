@@ -81,7 +81,110 @@ html, body {
           color: config.$color-green;
         }
       }
+      .row {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        .c-photo {
+          width: 100%;
+          margin: auto;
+          margin-bottom: 30px;
+
+          img {
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+
+          }
+        }
+
+        .c-descricao {
+          width: 100%;
+
+          p {
+            @include config.font-paragraf;
+            text-align: justify;
+            margin-bottom: 20px;
+          }
+
+          .habilidades {
+            width: 100%;
+
+            .h-item {
+              width: 100%;
+              margin-bottom: 10px;
+
+              .h-title {
+                width: 100%;
+
+                h3 {
+                  @include config.font-paragraf;
+                  font-size: 1rem;
+                  font-weight: bold;
+                  
+                }
+              }
+
+              .h-porcentagem {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+                min-height: 25px;
+
+                .h-porcentagem-geral {
+                  position: relative;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  width: 100%;
+                  height: 6px;
+                  border-radius: 6px;
+
+                  .h-porcentagem-conhecimento {
+                    height: 100%;
+
+                  }
+
+                  span {
+                    @include config.font-paragraf;
+                    margin-left: 100px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
    
+}
+
+.webview {
+  .gramatica {
+    width: 100%;
+    background-color: config.$color-green;
+    color: config.$color-white;
+
+    .container {
+      padding: 10px;
+
+      .s-title {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px
+
+        h2 {
+          @include config.font-paragraf;
+          font-size: 1,6rem;
+          font-weight: bold;
+          color: config.$color-white;
+        }
+      }
+    }
+  }
 }
