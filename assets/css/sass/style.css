@@ -213,4 +213,25 @@ html, body {
   font-weight: 400;
   text-align: center;
   font-size: 1.4rem;
+}
+
+.webview .redacao {
+  width: 100%;
+  min-height: 100%;
+}
+.webview .redacao .container {
+  padding: 10px;
+}
+.webview .redacao .container .p-title {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.webview .redacao .container .p-title h2 {
+  font-family: "Ruda", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #29AE81;
 }/*# sourceMappingURL=style.css.map */

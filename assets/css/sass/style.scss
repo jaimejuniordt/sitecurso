@@ -274,3 +274,30 @@ html, body {
     }
   }
 }
+
+.webview {
+   
+  .redacao {
+    width: 100%;
+    min-height: 100%;
+
+    .container {
+      padding: 10px;
+
+      .p-title {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+        h2 {
+          @include config.font-subtitle;
+          font-size: 1.6rem;
+          font-weight: bold;
+          color: config.$color-green;
+        }
+      }
+    }
+  }
+
+}
