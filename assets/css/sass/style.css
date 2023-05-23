@@ -346,7 +346,7 @@ body {
   border: 1px solid #29AE81;
   border-radius: 2px;
 }
-.webview .contato .container .formulario form .form-group textarea {
+.webview .contato .container .formulario form .form-group .controls textarea {
   font-family: "Ruda", sans-serif;
   font-weight: 400;
   width: 100%;
@@ -355,15 +355,15 @@ body {
   border: 1px solid #29AE81;
   outline: none;
 }
-.webview .contato .container .formulario form .form-group textarea:active {
+.webview .contato .container .formulario form .form-group .controls textarea:active {
   border: 1px solid #29AE81;
   border-radius: 2px;
 }
-.webview .contato .container .formulario form .form-group textarea:focus {
+.webview .contato .container .formulario form .form-group .controls textarea:focus {
   border: 1px solid #29AE81;
   border-radius: 2px;
 }
-.webview .contato .container .formulario form .btn-form-send {
+.webview .contato .container .formulario form .form-group .controls .btn-form-send {
   font-family: "Ruda", sans-serif;
   font-weight: 400;
   margin-top: 20px;
@@ -374,9 +374,17 @@ body {
   color: white;
   border-radius: 2px;
 }
-.webview .contato .container .formulario form .btn-form-send:hover {
+.webview .contato footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
   background-color: #29AE81;
 }
-.webview .contato .container .formulario form .btn-form-send:active {
-  background-color: #29AE81;
+.webview .contato footer span {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
