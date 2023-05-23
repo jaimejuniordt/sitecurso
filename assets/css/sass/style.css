@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-family: "Ruda", sans-serif;
   font-weight: 400;
   width: 100%;
@@ -41,7 +42,7 @@ html, body {
   width: 100%;
   margin-top: 8px;
 }
-.webview .intro .container .m-auto-btn .btn-curso {
+.webview .intro .container .m-auto-btn .btn-portfolio {
   font-family: "Ruda", sans-serif;
   font-weight: 400;
   width: 160px;
@@ -51,7 +52,6 @@ html, body {
   background-color: transparent;
   color: white;
 }
-
 .webview .aulas {
   width: 100%;
 }
@@ -135,53 +135,54 @@ html, body {
   font-weight: 400;
   margin-left: 100px;
 }
-
-.webview .gramatica {
+.webview .servicos {
   width: 100%;
   background-color: #29AE81;
   color: white;
 }
-.webview .gramatica .container {
+.webview .servicos .container {
   padding: 10px;
 }
-.webview .gramatica .container .s-title {
+.webview .servicos .container .s-title {
   width: 100%;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 30px h2;
-  margin-bottom-font-family: "Ruda", sans-serif;
-  margin-bottom-font-weight: 400;
-  margin-bottom-font-size: 1, 6rem;
-  margin-bottom-font-weight: bold;
-  margin-bottom-color: white;
+  margin-bottom: 30px;
 }
-.webview .gramatica .container .s-carrousel {
+.webview .servicos .container .s-title h2 {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+}
+.webview .servicos .container .s-carrousel {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
 }
-.webview .gramatica .container .s-carrousel .s-carrousel-container {
+.webview .servicos .container .s-carrousel .s-carrousel-container {
   display: flex;
   flex-direction: row;
   min-width: 100%;
 }
-.webview .gramatica .container .s-carrousel .s-carrousel-container .s-carrousel-item {
+.webview .servicos .container .s-carrousel .s-carrousel-container .s-carrousel-item {
   min-height: 260px;
   background-color: white;
   color: #29AE81;
 }
-.webview .gramatica .container .s-carrousel .s-carrousel-container .s-carrousel-item .title {
+.webview .servicos .container .s-carrousel .s-carrousel-container .s-carrousel-item .title {
   width: 100%;
   padding: 10px;
 }
-.webview .gramatica .container .s-carrousel .s-carrousel-container .s-carrousel-item .title p {
+.webview .servicos .container .s-carrousel .s-carrousel-container .s-carrousel-item .title p {
   font-family: "Ruda", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   font-weight: bold;
 }
-.webview .gramatica .container .s-carrousel .s-carrousel-container .s-carrousel-item .body {
+.webview .servicos .container .s-carrousel .s-carrousel-container .s-carrousel-item .body {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -189,7 +190,7 @@ html, body {
   width: 100%;
   min-height: 180px;
 }
-.webview .gramatica .container .s-carrousel .s-carrousel-container .s-carrousel-item .body .icon {
+.webview .servicos .container .s-carrousel .s-carrousel-container .s-carrousel-item .body .icon {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -197,10 +198,10 @@ html, body {
   width: 100%;
   margin-bottom: 10px;
 }
-.webview .gramatica .container .s-carrousel .s-carrousel-container .s-carrousel-item .body .icon span i {
+.webview .servicos .container .s-carrousel .s-carrousel-container .s-carrousel-item .body .icon span i {
   font-size: 38px;
 }
-.webview .gramatica .container .s-carrousel .s-carrousel-container .s-carrousel-item .body .texto {
+.webview .servicos .container .s-carrousel .s-carrousel-container .s-carrousel-item .body .texto {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -208,30 +209,174 @@ html, body {
   width: 100%;
   min-height: 10px;
 }
-.webview .gramatica .container .s-carrousel .s-carrousel-container .s-carrousel-item .body .texto p {
+.webview .servicos .container .s-carrousel .s-carrousel-container .s-carrousel-item .body .texto p {
   font-family: "Ruda", sans-serif;
   font-weight: 400;
   text-align: center;
   font-size: 1.4rem;
 }
-
-.webview .redacao {
+.webview .portfolios {
   width: 100%;
   min-height: 100%;
 }
-.webview .redacao .container {
+.webview .portfolios .container {
   padding: 10px;
 }
-.webview .redacao .container .p-title {
+.webview .portfolios .container .p-title {
   width: 100%;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 30px;
 }
-.webview .redacao .container .p-title h2 {
+.webview .portfolios .container .p-title h2 {
   font-family: "Ruda", sans-serif;
   font-weight: 500;
   font-size: 1.6rem;
   font-weight: bold;
   color: #29AE81;
+}
+.webview .portfolios .container .projetos {
+  width: 100%;
+}
+.webview .portfolios .container .projetos .projeto {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 10px;
+}
+.webview .portfolios .container .projetos .projeto .photos {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+.webview .portfolios .container .projetos .projeto .photos .img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.webview .portfolios .container .projetos .projeto .photos .img:hover .descricao {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background-color: #29ae81;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+}
+.webview .portfolios .container .projetos .projeto .photos .img:hover .descricao p {
+  display: block;
+  color: white;
+}
+.webview .portfolios .container .projetos .projeto .photos .img img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.webview .portfolios .container .projetos .projeto .photos .descricao {
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 50px;
+}
+.webview .portfolios .container .projetos .projeto .photos .descricao p {
+  display: none;
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+.webview .contato {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.webview .contato .container {
+  padding: 10px;
+}
+.webview .contato .container .title {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.webview .contato .container .title h2 {
+  font-family: "Ruda", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #29AE81;
+}
+.webview .contato .container .formulario {
+  width: 100%;
+}
+.webview .contato .container .formulario form {
+  width: 100%;
+}
+.webview .contato .container .formulario form .form-group {
+  width: 100%;
+}
+.webview .contato .container .formulario form .form-group .controls {
+  width: 100%;
+  min-height: 70px;
+}
+.webview .contato .container .formulario form .form-group .controls label {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  font-weight: bold;
+  color: #29AE81;
+}
+.webview .contato .container .formulario form .form-group .controls input {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid #29AE81;
+}
+.webview .contato .container .formulario form .form-group .controls input:active {
+  border: 1px solid #29AE81;
+  border-radius: 2px;
+}
+.webview .contato .container .formulario form .form-group .controls input:focus {
+  border: 1px solid #29AE81;
+  border-radius: 2px;
+}
+.webview .contato .container .formulario form .form-group textarea {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  height: 180px;
+  padding: 10px;
+  border: 1px solid #29AE81;
+  outline: none;
+}
+.webview .contato .container .formulario form .form-group textarea:active {
+  border: 1px solid #29AE81;
+  border-radius: 2px;
+}
+.webview .contato .container .formulario form .form-group textarea:focus {
+  border: 1px solid #29AE81;
+  border-radius: 2px;
+}
+.webview .contato .container .formulario form .btn-form-send {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  margin-top: 20px;
+  width: 140%;
+  height: 40px;
+  border: none;
+  background-color: #29AE81;
+  color: white;
+  border-radius: 2px;
+}
+.webview .contato .container .formulario form .btn-form-send:hover {
+  background-color: #29AE81;
+}
+.webview .contato .container .formulario form .btn-form-send:active {
+  background-color: #29AE81;
 }/*# sourceMappingURL=style.css.map */

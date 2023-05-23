@@ -1,5 +1,4 @@
-
-@use 'config';
+@use "config";
 
 // reset da página
 * {
@@ -8,18 +7,18 @@
   box-sizing: border-box;
 }
 
-html, body {
-
+html,
+body {
   @include config.font-paragraf;
   width: 100%;
   height: 100%;
-  font-size: 18px; 
+  font-size: 18px;
 }
 
 .webview {
   width: 100%;
   margin: auto;
-  
+
   .intro {
     display: flex;
     justify-content: center;
@@ -28,18 +27,18 @@ html, body {
     height: 100vh;
     background-color: config.$color-green;
     color: config.$color-white;
-    
+
     .container {
       h1 {
         font-size: 2rem;
         text-align: center;
       }
-      
+
       p {
         font-size: 1rem;
         text-align: center;
       }
-      
+
       .m-auto-btn {
         display: flex;
         flex-direction: row;
@@ -47,34 +46,30 @@ html, body {
         align-items: center;
         width: 100%;
         margin-top: 8px;
-        
+
         .btn-portfolio {
           @include config.font-paragraf;
           width: 160px;
           height: 35px;
           border-radius: 6px;
-          border: 1px solid config.$color-white; 
+          border: 1px solid config.$color-white;
           background-color: transparent;
           color: config.$color-white;
         }
       }
     }
   }
-}
-
-.webview {
-  
   .aulas {
     width: 100%;
-    
+
     .container {
       padding: 10px;
-      
+
       .title {
         width: 100%;
         text-align: center;
         margin-top: 20px;
-        
+
         h2 {
           @include config.font-subtitle;
           font-size: 1.6rem;
@@ -82,17 +77,17 @@ html, body {
           color: config.$color-green;
         }
       }
-      
+
       .row {
         width: 100%;
         margin-top: 30px;
         margin-bottom: 30px;
-        
+
         .c-photo {
           width: 100%;
           margin: auto;
           margin-bottom: 30px;
-          
+
           img {
             width: 100%;
             background-size: cover;
@@ -100,40 +95,40 @@ html, body {
             background-position: top;
           }
         }
-        
+
         .c-descricao {
           width: 100%;
-          
+
           p {
             @include config.font-paragraf;
             text-align: justify;
             margin-bottom: 20px;
           }
-          
+
           .habilidades {
             width: 100%;
-            
+
             .h-item {
               width: 100%;
               margin-bottom: 10px;
-              
+
               .h-title {
                 width: 100%;
-                
+
                 h3 {
                   @include config.font-paragraf;
                   font-size: 1rem;
                   font-weight: bold;
                 }
               }
-              
+
               .h-porcentagem {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 width: 100%;
                 min-height: 25px;
-                
+
                 .h-porcentagem-geral {
                   position: relative;
                   display: flex;
@@ -142,7 +137,7 @@ html, body {
                   width: 100%;
                   height: 6px;
                   border-radius: 6px;
-                  
+
                   .h-porcentagem-conhecimento {
                     height: 100%;
                   }
@@ -158,59 +153,55 @@ html, body {
       }
     }
   }
-}
-
-.webview {
-  
   .servicos {
     width: 100%;
     background-color: config.$color-green;
     color: config.$color-white;
-    
+
     .container {
       padding: 10px;
-      
+
       .s-title {
         width: 100%;
         text-align: center;
         margin-top: 20px;
-        margin-bottom: 30px
+        margin-bottom: 30px;
 
-        h2 { 
+        h2 {
           @include config.font-paragraf;
           font-size: 1.6rem;
           font-weight: bold;
           color: config.$color-white;
         }
       }
-      
+
       .s-carrousel {
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        
+
         .s-carrousel-container {
           display: flex;
           flex-direction: row;
           min-width: 100%;
-          
+
           .s-carrousel-item {
             min-height: 260px;
             background-color: config.$color-white;
             color: config.$color-green;
-            
+
             .title {
               width: 100%;
               padding: 10px;
-              
+
               p {
                 @include config.font-paragraf;
                 font-size: 1.6rem;
                 font-weight: bold;
               }
             }
-            
+
             .body {
               display: flex;
               flex-direction: column;
@@ -218,7 +209,7 @@ html, body {
               align-items: center;
               width: 100%;
               min-height: 180px;
-              
+
               .icon {
                 display: flex;
                 flex-direction: row;
@@ -226,7 +217,7 @@ html, body {
                 align-items: center;
                 width: 100%;
                 margin-bottom: 10px;
-                
+
                 span i {
                   font-size: 38px;
                 }
@@ -238,7 +229,7 @@ html, body {
                 align-items: center;
                 width: 100%;
                 min-height: 10px;
-                
+
                 p {
                   @include config.font-paragraf;
                   text-align: center;
@@ -251,23 +242,20 @@ html, body {
       }
     }
   }
-}
 
-.webview {
-  
   .portfolios {
     width: 100%;
     min-height: 100%;
-    
+
     .container {
       padding: 10px;
-      
+
       .p-title {
         width: 100%;
         text-align: center;
         margin-top: 20px;
         margin-bottom: 30px;
-        
+
         h2 {
           @include config.font-subtitle;
           font-size: 1.6rem;
@@ -297,13 +285,12 @@ html, body {
               position: relative;
 
               &:hover {
-
                 .descricao {
                   position: absolute;
                   display: flex;
                   width: 100%;
                   height: 50px;
-                  background-color: #29AE81;
+                  background-color: #29ae81;
                   bottom: 0;
                   left: 0;
                   z-index: 9999;
@@ -344,9 +331,6 @@ html, body {
       }
     }
   }
-}
-
-.webview {
 
   .contato {
     width: 100%;
@@ -407,35 +391,42 @@ html, body {
               }
             }
 
-              textarea {
-                @include config.font.paragraf;
-                width: 100%;
-                height: 180px;
-                padding: 10px;
+            textarea {
+              @include config.font-paragraf;
+              width: 100%;
+              height: 180px;
+              padding: 10px;
+              border: 1px solid config.$color-green;
+              outline: none;
+
+              &:active {
                 border: 1px solid config.$color-green;
-                outline: none;
+                border-radius: 2px;
+              }
 
-                &:active {
-                  border: 1px solid config.$color-green;
-                  border-radius: 2px;
-                }
-
-                &:focus {
-                  border: 1px solid config.$color-green;
-                  border-radius: 2px;
-                }
+              &:focus {
+                border: 1px solid config.$color-green;
+                border-radius: 2px;
               }
             }
+          }
 
-            .btn-form-send {
-              @include config.font-paragraf;
-              margin-top: 20px;
-              width: 140%;
-              height: 40px;
-              border: none;
+          .btn-form-send {
+            @include config.font-paragraf;
+            margin-top: 20px;
+            width: 140%;
+            height: 40px;
+            border: none;
+            background-color: config.$color-green;
+            color: config.$color-white;
+            border-radius: 2px;
+
+            &:hover {
               background-color: config.$color-green;
-              color: config.$color-white;
-              border-radius: 2px;
+            }
+
+            &:active {
+              background-color: config.$color-green;
             }
           }
         }
@@ -443,4 +434,18 @@ html, body {
     }
   }
 
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: config.$color-green;
 
+    span {
+      @include config.font-paragraf;
+      color: config.$color-white;
+    }
+  }
+}
