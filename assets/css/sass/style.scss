@@ -389,7 +389,7 @@ body {
                   border-radius: 2px;
                 }
               }
-            }
+            
 
             textarea {
               @include config.font-paragraf;
@@ -448,4 +448,5 @@ body {
       color: config.$color-white;
     }
   }
+}
 }
