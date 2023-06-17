@@ -84,12 +84,12 @@ body {
         margin-bottom: 30px;
 
         .c-photo {
-          width: 100%;
+          width: 50%;
           margin: auto;
           margin-bottom: 30px;
 
           img {
-            width: 100%;
+            width: 50%;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: top;
@@ -407,9 +407,8 @@ body {
                   border: 1px solid config.$color-green;
                   border-radius: 2px;
                 }
-              }         
+              }
 
-           
               .btn-form-send {
                 @include config.font-paragraf;
                 margin-top: 20px;
@@ -418,8 +417,7 @@ body {
                 border: none;
                 background-color: config.$color-green;
                 color: config.$color-white;
-                border-radius: 2px;                
-                  
+                border-radius: 2px;
               }
             }
           }
@@ -443,6 +441,3 @@ body {
     }
   }
 }
-
-
-
